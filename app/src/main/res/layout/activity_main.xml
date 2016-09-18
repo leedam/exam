@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <Button
+        android:id="@+id/fill_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:layout_weight="1"
+        android:text="F"
+        android:textColor="#ffffff"
+        android:onClick="changeColor" />
+
+    <Button
+        android:id="@+id/point_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:text="."
+        android:textColor="#ffffff"
+        android:onClick="changeColor" />
+
+    <Button
+    android:id="@+id/line_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+        android:layout_weight="1"
+    android:text="/"
+    android:textColor="#ffffff"
+    android:onClick="changeColor" />
+
+    <Button
+    android:id="@+id/rect_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="1"
+    android:background="#000000"
+    android:text="ㅁ"
+    android:textColor="#ffffff"
+    android:onClick="changeColor" />
+
+    <Button
+    android:id="@+id/circle_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+        android:layout_weight="1"
+    android:background="#000000"
+    android:text="ㅇ"
+    android:textColor="#ffffff"
+    android:onClick="changeColor" />
+
+    <Button
+    android:id="@+id/man_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+        android:layout_weight="1"
+    android:text="저장"
+    android:textColor="#ffffff"
+    android:onClick="btn_store"/>
+
+    </LinearLayout>
+
+    <com.example.leedam.myapplication768.MyView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/myView"
+        android:layout_below="@+id/linearLayout" />
+</RelativeLayout>
